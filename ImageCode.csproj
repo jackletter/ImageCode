@@ -47,8 +47,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
+    <Reference Include="zxing, Version=0.15.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\zxing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarCodeOP.cs" />
     <Compile Include="ImageOP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QRCodeOP.cs" />
@@ -56,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\ThoughtWorks.QRCode.dll" />
+    <Content Include="lib\zxing.dll" />
     <Content Include="res\back.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
