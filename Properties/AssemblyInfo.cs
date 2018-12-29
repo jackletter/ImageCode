@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ImageCode")]
 [assembly: AssemblyDescription("图片编码组件-胡庆杰")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JackOA")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ImageCode")]
-[assembly: AssemblyCopyright("Copyright © JackOA 2016")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: 
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]
