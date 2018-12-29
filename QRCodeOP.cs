@@ -14,7 +14,7 @@ namespace ImageCode
 {
     public class QRCodeOP
     {
-        #region 生成二维码图片(指定图片大小白边大小生成的图片的路径) public static void Encode(string str, int size, string filePath, int border = 0)
+        #region 生成二维码图片
         /// <summary>
         /// 生成二维码图片
         /// </summary>
@@ -29,7 +29,7 @@ namespace ImageCode
         }
         #endregion
 
-        #region 生成二维码图片 在中心位置会有小图标 public static void EncodeBack(string str, int size, string filePath, string backImgPath, int border = 0)
+        #region 生成二维码图片(在中心位置会有小图标)
         /// <summary>
         /// 生成二维码图片 在中心位置会有小图标
         /// </summary>
@@ -46,7 +46,7 @@ namespace ImageCode
         }
         #endregion
 
-        #region 合并两个图片 public static Image CombinImage(Image imgBack, string destImg)
+        #region 合并两个图片
         /// <summary>    
         /// 调用此函数后使此两种图片合并，类似相册，有个    
         /// 背景图，中间贴自己的目标图片    
@@ -192,6 +192,7 @@ namespace ImageCode
         }
         #endregion
 
+        #region 调整图片的尺寸
         /// <summary>    
         /// Resize图片    
         /// </summary>    
@@ -217,17 +218,12 @@ namespace ImageCode
                 return null;
             }
         }
+        #endregion
 
-        private static bool IsTrue() // 在Image类别对图片进行缩放的时候,需要一个返回bool类别的委托 
+        // 在Image类别对图片进行缩放的时候,需要一个返回bool类别的委托 
+        private static bool IsTrue()
         {
             return true;
         }
     }
 }
-
-/** 调用示例:
-    string str = "为生成的二维码图像裁剪白边并调整为请求的高度";
-    string bakPath = "E:/MyDemoLib/Frame/ImageCode/res/back.ico";
-    QRCodeOP.Encode(str, 100, "c:\\1.png", 20);
-    QRCodeOP.EncodeBack(str, 200, "c:\\2.png", bakPath, 20);
-*/

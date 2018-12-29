@@ -11,6 +11,13 @@ namespace ImageCode
 {
     public class BarCodeOP
     {
+        /// <summary>
+        /// 生成条形码
+        /// </summary>
+        /// <param name="content">编码的内容字符串</param>
+        /// <param name="filePath">生成的图片保存路径</param>
+        /// <param name="height">生成图片的高度</param>
+        /// <param name="width">生成图片的宽度</param>
         public static void Encode(string content, string filePath, int height, int? width = null)
         {
             EncodingOptions options = null;

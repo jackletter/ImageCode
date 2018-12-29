@@ -13,7 +13,7 @@ namespace ImageCode
 {
     public class ImageOP
     {
-        #region 缩略图 public static void MakeThumbnail(string originalImagePath, string thumbnailPath, int width, int height, string mode)
+        #region 缩略图
         /// <summary>
         /// 生成缩略图
         /// </summary>
@@ -100,7 +100,7 @@ namespace ImageCode
         }
         #endregion
 
-        #region 图片水印 public static string ImageWatermark(string path, string waterpath, string location)
+        #region 图片水印
         /// <summary>
         /// 图片水印处理方法
         /// </summary>
